@@ -48,6 +48,8 @@ Here is a link to a Markdown cheatsheet if you guys want to use markdown formati
 
 [According to Image Recognition, This Turtle Is a Rifle](http://www.popularmechanics.com/technology/news/a28876/machine-learning-image-recognition-adversarial-examples/)
 
+[Slight Street Sign Modifications Can Completely Fool Machine Learning Algorithms](https://spectrum.ieee.org/cars-that-think/transportation/sensors/slight-street-sign-modifications-can-fool-machine-learning-algorithms)
+
 #### Maybe Not Wrong but Scary:
 
 [How Target Figured Out A Teen Girl Was Pregnant Before Her Father Did](https://www.forbes.com/sites/kashmirhill/2012/02/16/how-target-figured-out-a-teen-girl-was-pregnant-before-her-father-did/#715a66876668)
@@ -72,4 +74,10 @@ Here is a link to a Markdown cheatsheet if you guys want to use markdown formati
 
 [Reddit: Denied job because I didn't have a Facebook account. What are my legal options?](https://www.reddit.com/r/AskReddit/comments/1ar82p/denied_job_because_i_didnt_have_a_facebook/)
 
-[](https://www.huffingtonpost.com/rachel-ryan/hiring-facebook_b_2795047.html)
+[Yes, Employers Will Check Your Facebook Before Offering You a Job](https://www.huffingtonpost.com/rachel-ryan/hiring-facebook_b_2795047.html)
+
+[Meet the Renegades Who Shun Social Media](https://www.vogue.com/article/dark-on-social-media-abstainers)
+
+[Is There Something Wrong With People Who Do Not Use Facebook?](https://www.psychologytoday.com/blog/unique-everybody-else/201209/is-there-something-wrong-people-who-do-not-use-facebook)
+
+[Does Not Having a Facebook Page Make You ‘Suspicious’ to Employers?](http://business.time.com/2012/08/08/does-not-having-a-facebook-page-make-you-suspicious-to-employers/)
