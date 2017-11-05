@@ -14,6 +14,7 @@ Group met in class 2017/11/02 0.75 hours
 Will:
 
 README set up 2017/11/02 0.25 hours
+Researched Topic and added links to README; 2017/10/2&3&5; 3 hours.
 
 Gabby:
 Hover counter 2017/11/04 1.75 hours
