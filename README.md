@@ -18,6 +18,9 @@ README set up 2017/11/02 0.25 hours
 Gabby:
 Hover counter 2017/11/04 1.75 hours
 
+Gabby:
+Hover counter 2017/11/05 2 hours
+
 ## Markdown
 
 Here is a link to a Markdown cheatsheet if you guys want to use markdown formating: [Markdown Cheatsheet](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf)
