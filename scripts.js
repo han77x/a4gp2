@@ -5,6 +5,10 @@ $(document).ready(function(){
     $(".btn2").click(function(){
         $(".cover").slideDown();
     });
+<<<<<<< HEAD
+=======
+
+>>>>>>> a87ced9cac9560b130fa1c4b18948dec52b49ba4
 
 
 /*This hides the cover page once a link is selected*/
@@ -17,17 +21,27 @@ $(document).ready(function(){
 //Basic script used from http://jsfiddle.net/XQ9kY/1/
 
 
-	$('.first').hover(   
+	$('#first').hover(   
 		function(){       
 			$(this).data('inTime', new Date().getTime());
 		},    
 		function(){       
 			var outTime = new Date().getTime();       
 			var firstTime = (outTime - $(this).data('inTime'))/1000;        
-			$('#firstResult').html('You hovered over the top for ' + firstTime + ' seconds.');
+			$('#firstResult').html('You hovered over the topmost part for ' + firstTime + ' seconds.');
 		}
 	);
-	$('.side').hover(   
+	$('#second').hover(   
+		function(){       
+			$(this).data('inTime', new Date().getTime());
+		},    
+		function(){       
+			var outTime = new Date().getTime();       
+			var secondTime = (outTime - $(this).data('inTime'))/1000;        
+			$('#secondResult').html('You gazed upon the top box for ' + secondTime + ' seconds.');
+		}
+	);
+	$('#side').hover(   
 		function(){       
 			$(this).data('inTime', new Date().getTime());
 		},    
@@ -37,7 +51,7 @@ $(document).ready(function(){
 			$('#sideResult').html('You stared at the side for ' + sideTime + ' seconds.');
 		}
 	);
-	$('.third').hover(   
+	$('#third').hover(   
 		function(){       
 			$(this).data('inTime', new Date().getTime());
 		},    
@@ -47,7 +61,7 @@ $(document).ready(function(){
 			$('#thirdResult').html('You read the slideshow for ' + thirdTime + ' seconds.');
 		}
 	);
-	$('.fourth').hover(   
+	$('#fourth').hover(   
 		function(){       
 			$(this).data('inTime', new Date().getTime());
 		},    
@@ -72,3 +86,4 @@ $(document).ready(function(){
 	
 });
 //end scroll top
+});
