@@ -5,16 +5,15 @@ $(document).ready(function(){
     $(".btn2").click(function(){
         $(".cover").slideDown();
     });
-});
 
 
 /*This hides the cover page once a link is selected*/
-$(document).ready(function(){
+
 	$(".hide").click(function() {
 		$(".cover").hide();
 	});
-});
 
+	
 //Basic script used from http://jsfiddle.net/XQ9kY/1/
 
 

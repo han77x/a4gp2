@@ -21,6 +21,7 @@ body {
 .container {
 	width:85%;
 	margin: 0 auto;
+	
 }
 #first {
 	width: 100%;
@@ -58,6 +59,10 @@ footer {
 	width:100%;
 	height:100vh;
 	background:url('images/cspics.jpg');
+	background-size: 75vw 100vh;
+	background-repeat:no-repeat;
+	background-position:center;
+	background-color:#000;
 	position:absolute;
 	z-index:2;
 	text-align:center;
@@ -74,7 +79,7 @@ a.cover {
 #title {
 	color:#fff;
 	font-family: 'Lucida Console', 'Lucida Sans Typewriter', monaco, 'Bitstream Vera Sans Mono', monospace;
-	font-size:75px;
+	font-size:65px;
 	font-style:italic;
 	text-decoration:underline;
 	z-index:1;
@@ -86,60 +91,60 @@ a.cover {
 .coverFirst {
 	border-radius: 25px;
     border: 2px solid #fff;
-	width:250px;
-	height:150px;
+	width:20vw;
+	height:20vh;
 	margin:0 auto;
 	position:absolute;
 	left:5%;
-	top:50px;
+	top:10px;
 	z-index:1;
 	color:#fff;
 }
 .coverSecond {
 	border-radius: 25px;
     border: 2px solid #fff;
-	width:250px;
-	height:150px;
+	width:20vw;
+	height:20vh;
 	margin:0 auto;
 	position:absolute;
 	left:5%;
-	top:250px;
+	top:190px;
 	z-index:1;
 	color:#fff;
 }
 .coverThird {
 	border-radius: 25px;
     border: 2px solid #fff;
-	width:250px;
-	height:150px;
+	width:20vw;
+	height:20vh;
 	margin:0 auto;
 	position:absolute;
 	left:5%;
-	top:450px;
+	top:370px;
 	z-index:1;
 	color:#fff;
 }
 .coverFourth {
 	border-radius: 25px;
     border: 2px solid #fff;
-	width:250px;
-	height:150px;
+	width:20vw;
+	height:20vh;
 	margin:0 auto;
 	position:absolute;
 	left:5%;
-	top:650px;
+	top:550px;
 	z-index:1;
 	color:#fff;
 }
 .coverSide {
 	border-radius: 25px;
     border: 2px solid #fff;
-	width:250px;
-	height:150px;
+	width:20vw;
+	height:20vh;
 	margin:0 auto;
 	position:absolute;
 	right:5%;
-	top:650px;
+	top:550px;
 	z-index:1;
 	color:#fff;
 }
