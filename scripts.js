@@ -5,10 +5,6 @@ $(document).ready(function(){
     $(".btn2").click(function(){
         $(".cover").slideDown();
     });
-<<<<<<< HEAD
-=======
-
->>>>>>> a87ced9cac9560b130fa1c4b18948dec52b49ba4
 
 
 /*This hides the cover page once a link is selected*/
