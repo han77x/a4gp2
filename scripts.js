@@ -17,6 +17,12 @@ $(document).ready(function(){
 	
 //Basic script used from http://jsfiddle.net/XQ9kY/1/
 
+	var totalFirstResult = 0;
+	var totalSecondResult = 0;
+	var totalSideResult = 0;
+	var totalThirdResult = 0;
+	var totalFourthResult = 0;
+	var totalFifthResult = 0;
 
 	$('#first').hover(   
 		function(){       
@@ -24,8 +30,9 @@ $(document).ready(function(){
 		},    
 		function(){       
 			var outTime = new Date().getTime();       
-			var firstTime = (outTime - $(this).data('inTime'))/1000;        
-			$('#firstResult').html('You hovered over the topmost part for ' + firstTime + ' seconds.');
+			var firstTime = (outTime - $(this).data('inTime'))/1000;
+			totalFirstResult = totalFirstResult + firstTime;
+			$('#firstResult').html('You hovered over the topmost part for ' + totalFirstResult.toFixed(2) + ' seconds. The last time you hovered here was: ' + totalFirstResult.toFixed(2) + ' seconds long.');
 		}
 	);
 	$('#second').hover(   
@@ -34,8 +41,9 @@ $(document).ready(function(){
 		},    
 		function(){       
 			var outTime = new Date().getTime();       
-			var secondTime = (outTime - $(this).data('inTime'))/1000;        
-			$('#secondResult').html('You gazed upon the top box for ' + secondTime + ' seconds.');
+			var secondTime = (outTime - $(this).data('inTime'))/1000;
+			totalSecondResult = totalSecondResult + secondTime;
+			$('#secondResult').html('You gazed upon the top box for ' + totalSecondResult.toFixed(2) + ' seconds. The last time you hovered here was ' + secondTime.toFixed(2) + ' seconds long.');
 		}
 	);
 	$('#side').hover(   
@@ -45,7 +53,8 @@ $(document).ready(function(){
 		function(){       
 			var outTime = new Date().getTime();       
 			var sideTime = (outTime - $(this).data('inTime'))/1000;        
-			$('#sideResult').html('You stared at the side for ' + sideTime + ' seconds.');
+			totalSideResult = totalSideResult + sideTime;
+			$('#sideResult').html('You stared at the side for ' + totalSideResult.toFixed(2) + ' seconds. The last time you hovered here was ' + sideTime.toFixed(2) + ' seconds.');
 		}
 	);
 	$('#third').hover(   
@@ -54,8 +63,9 @@ $(document).ready(function(){
 		},    
 		function(){       
 			var outTime = new Date().getTime();       
-			var thirdTime = (outTime - $(this).data('inTime'))/1000;        
-			$('#thirdResult').html('You read the slideshow for ' + thirdTime + ' seconds.');
+			var thirdTime = (outTime - $(this).data('inTime'))/1000;
+			totalThirdResult = totalThirdResult + thirdTime;			
+			$('#thirdResult').html('You read the slideshow for ' + totalThirdResult.toFixed(2) + ' seconds. The last time you hovered here was '+thirdTime.toFixed(2) + ' seconds.');
 		}
 	);
 	$('#fourth').hover(   
@@ -64,8 +74,9 @@ $(document).ready(function(){
 		},    
 		function(){       
 			var outTime = new Date().getTime();       
-			var fourthTime = (outTime - $(this).data('inTime'))/1000;        
-			$('#fourthResult').html('You were wondering about this cool part for ' + fourthTime + ' seconds.');
+			var fourthTime = (outTime - $(this).data('inTime'))/1000;
+			totalFourthResult = totalFourthResult + fourthTime;			
+			$('#fourthResult').html('You were wondering about this cool part for ' + totalFourthResult.toFixed(2) + ' seconds. The last time you hovered here was ' + fourthTime.toFixed(2) + ' seconds.');
 		}
 	);
 //end hover
