@@ -10,7 +10,94 @@
 </script> 
 <![endif]-->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="scripts.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+    $(".btn1").click(function(){
+        $(".cover").slideUp();
+    });
+    $(".btn2").click(function(){
+        $(".cover").slideDown();
+    });
+
+
+
+/*This hides the cover page once a link is selected*/
+
+	$(".hide").click(function() {
+		$(".cover").hide();
+	});
+
+	
+//Basic script used from http://jsfiddle.net/XQ9kY/1/
+
+
+	$('#first').hover(   
+		function(){       
+			$(this).data('inTime', new Date().getTime());
+		},    
+		function(){       
+			var outTime = new Date().getTime();       
+			var firstTime = (outTime - $(this).data('inTime'))/1000;        
+			$('#firstResult').html('You hovered over the topmost part for ' + firstTime + ' seconds.');
+		}
+	);
+	$('#second').hover(   
+		function(){       
+			$(this).data('inTime', new Date().getTime());
+		},    
+		function(){       
+			var outTime = new Date().getTime();       
+			var secondTime = (outTime - $(this).data('inTime'))/1000;        
+			$('#secondResult').html('You gazed upon the top box for ' + secondTime + ' seconds.');
+		}
+	);
+	$('#side').hover(   
+		function(){       
+			$(this).data('inTime', new Date().getTime());
+		},    
+		function(){       
+			var outTime = new Date().getTime();       
+			var sideTime = (outTime - $(this).data('inTime'))/1000;        
+			$('#sideResult').html('You stared at the side for ' + sideTime + ' seconds.');
+		}
+	);
+	$('#third').hover(   
+		function(){       
+			$(this).data('inTime', new Date().getTime());
+		},    
+		function(){       
+			var outTime = new Date().getTime();       
+			var thirdTime = (outTime - $(this).data('inTime'))/1000;        
+			$('#thirdResult').html('You read the slideshow for ' + thirdTime + ' seconds.');
+		}
+	);
+	$('#fourth').hover(   
+		function(){       
+			$(this).data('inTime', new Date().getTime());
+		},    
+		function(){       
+			var outTime = new Date().getTime();       
+			var fourthTime = (outTime - $(this).data('inTime'))/1000;        
+			$('#fourthResult').html('You were wondering about this cool part for ' + fourthTime + ' seconds.');
+		}
+	);
+//end hover
+
+	
+	
+//This makes the screen scroll back to top on refresh
+
+    $('html, body').scrollTop(0);
+
+    $(window).on('load', function() {
+    setTimeout(function(){
+        $('html, body').scrollTop(0);
+    }, 0);
+});
+//end scroll top
+});
+
+</script>
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="basic.css">
@@ -61,10 +148,16 @@
 </div>
 
 <div id="side">
-<img src="images/exampleimage.jpg" alt="example">
+<h1>Lorem Ipsum</h1>
+<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vel massa sollicitudin dolor mattis ultricies quis in justo. Nunc facilisis nibh in volutpat dignissim. Nunc convallis ligula at iaculis vulputate. Curabitur tempus dignissim diam semper dignissim. Praesent vel molestie dolor, eget porta lorem. Nulla posuere molestie ex nec semper. Maecenas aliquet interdum risus et sodales.
+
+Proin porttitor vestibulum efficitur. Ut tristique, dolor at semper mollis, ipsum diam posuere lectus, sed dapibus ex erat vitae magna. In efficitur facilisis dui, eu gravida sapien vulputate quis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Praesent ultrices finibus mi eu egestas. Mauris ac maximus odio, pellentesque placerat felis. Aliquam et neque risus. Sed convallis velit eget dui luctus viverra. Etiam sodales vitae purus ut ultrices. Curabitur a nisl ac diam ultricies ornare in in orci. Curabitur finibus mauris eu porttitor fringilla.
+
+Nulla porttitor arcu id mauris fringilla porttitor. Nam vehicula, ligula quis pretium volutpat, erat elit tincidunt odio, iaculis molestie tortor purus a diam. Nunc fringilla orci et enim aliquet gravida. Cras vehicula libero eu tellus molestie dictum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Maecenas laoreet enim in ligula ultrices eleifend. Vivamus id purus lacus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; </p>
 </div>
 
 <div id="second">
+<img id="ex" src="images/exampleimage.jpg" alt="example"/>
 </div>
 
 
@@ -106,6 +199,141 @@
   </ul>
 </div>
 
+<div class="mySlides fade">
+  <div class="numbertext">4 / 3</div>
+  <h1 class="bullet">This is the header</h1>
+  <ul class="bullet">
+		<li>This is a list</li>
+		<li>You can add info here</li>
+		<li>and here...</li>
+		<li>and here...</li>
+  </ul>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">5 / 3</div>
+  <h1 class="bullet">This is the header</h1>
+  <ul class="bullet">
+		<li>This is a list</li>
+		<li>You can add info here</li>
+		<li>and here...</li>
+		<li>and here...</li>
+  </ul>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">6 / 3</div>
+  <h1 class="bullet">This is the header</h1>
+  <ul class="bullet">
+		<li>This is a list</li>
+		<li>You can add info here</li>
+		<li>and here...</li>
+		<li>and here...</li>
+  </ul>
+</div>
+
+
+<div class="mySlides fade">
+  <div class="numbertext">7 / 3</div>
+  <h1 class="bullet">This is the header</h1>
+  <ul class="bullet">
+		<li>This is a list</li>
+		<li>You can add info here</li>
+		<li>and here...</li>
+		<li>and here...</li>
+  </ul>
+</div>
+
+
+<div class="mySlides fade">
+  <div class="numbertext">8 / 3</div>
+  <h1 class="bullet">This is the header</h1>
+  <ul class="bullet">
+		<li>This is a list</li>
+		<li>You can add info here</li>
+		<li>and here...</li>
+		<li>and here...</li>
+  </ul>
+</div>
+
+
+<div class="mySlides fade">
+  <div class="numbertext">9 / 3</div>
+  <h1 class="bullet">This is the header</h1>
+  <ul class="bullet">
+		<li>This is a list</li>
+		<li>You can add info here</li>
+		<li>and here...</li>
+		<li>and here...</li>
+  </ul>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">10 / 3</div>
+  <h1 class="bullet">This is the header</h1>
+  <ul class="bullet">
+		<li>This is a list</li>
+		<li>You can add info here</li>
+		<li>and here...</li>
+		<li>and here...</li>
+  </ul>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">11 / 3</div>
+  <h1 class="bullet">This is the header</h1>
+  <ul class="bullet">
+		<li>This is a list</li>
+		<li>You can add info here</li>
+		<li>and here...</li>
+		<li>and here...</li>
+  </ul>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">12 / 3</div>
+  <h1 class="bullet">This is the header</h1>
+  <ul class="bullet">
+		<li>This is a list</li>
+		<li>You can add info here</li>
+		<li>and here...</li>
+		<li>and here...</li>
+  </ul>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">13 / 3</div>
+  <h1 class="bullet">This is the header</h1>
+  <ul class="bullet">
+		<li>This is a list</li>
+		<li>You can add info here</li>
+		<li>and here...</li>
+		<li>and here...</li>
+  </ul>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">14 / 3</div>
+  <h1 class="bullet">This is the header</h1>
+  <ul class="bullet">
+		<li>This is a list</li>
+		<li>You can add info here</li>
+		<li>and here...</li>
+		<li>and here...</li>
+  </ul>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">15 / 3</div>
+  <h1 class="bullet">This is the header</h1>
+  <ul class="bullet">
+		<li>This is a list</li>
+		<li>You can add info here</li>
+		<li>and here...</li>
+		<li>and here...</li>
+  </ul>
+</div>
+
+
 <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
 <a class="next" onclick="plusSlides(1)">&#10095;</a>
 
@@ -116,6 +344,18 @@
   <span class="dot" onclick="currentSlide(1)"></span> 
   <span class="dot" onclick="currentSlide(2)"></span> 
   <span class="dot" onclick="currentSlide(3)"></span> 
+  <span class="dot" onclick="currentSlide(4)"></span> 
+  <span class="dot" onclick="currentSlide(5)"></span> 
+  <span class="dot" onclick="currentSlide(6)"></span> 
+  <span class="dot" onclick="currentSlide(7)"></span> 
+  <span class="dot" onclick="currentSlide(8)"></span> 
+  <span class="dot" onclick="currentSlide(9)"></span> 
+  <span class="dot" onclick="currentSlide(10)"></span> 
+  <span class="dot" onclick="currentSlide(11)"></span> 
+  <span class="dot" onclick="currentSlide(12)"></span> 
+  <span class="dot" onclick="currentSlide(13)"></span> 
+  <span class="dot" onclick="currentSlide(14)"></span> 
+  <span class="dot" onclick="currentSlide(15)"></span> 
 </div>
 
 
@@ -123,12 +363,15 @@
 <script>
 var slideIndex = 1;
 showSlides(slideIndex);
+
 function plusSlides(n) {
   showSlides(slideIndex += n);
 }
+
 function currentSlide(n) {
   showSlides(slideIndex = n);
 }
+
 function showSlides(n) {
   var i;
   var slides = document.getElementsByClassName("mySlides");
@@ -155,7 +398,6 @@ function showSlides(n) {
 	<p>If you would like to see <input type="button" name="Submit" value="Click Here" onclick="document.getElementById('results').style.display = 'block' ;" />
 	<div id="results"></p>
 		<div id="firstResult"></div>
-		<div id="secondResult"></div>
 		<div id="sideResult"></div>
 		<div id="thirdResult"></div>
 		<div id="fourthResult"></div>
