@@ -7,6 +7,7 @@ $(document).ready(function(){
     });
 
 
+
 /*This hides the cover page once a link is selected*/
 
 	$(".hide").click(function() {
@@ -90,7 +91,6 @@ $(document).ready(function(){
     setTimeout(function(){
         $('html, body').scrollTop(0);
     }, 0);
-	
 });
 //end scroll top
 });
