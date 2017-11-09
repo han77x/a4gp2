@@ -40,6 +40,7 @@ body {
 #fourth {
 	font-size: 18px;
 	line-height: 150%;
+	height: auto;
 }
 #third {
 	width: 70%;
@@ -51,12 +52,14 @@ footer {
 	height: 50px;
 	background: #ddd;
 	font-size: 1em;
+	clear: both;
 }
 /*styles the IP section*/
 #userInfo {
 	padding:2%;
 	background:yellow;
 	margin-top:10px;
+	
 }
 #userInfo > h1 {
 	font-size: 22px;
