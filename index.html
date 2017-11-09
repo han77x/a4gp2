@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Untitled Document</title>
+<title>A4GP2 WEB PAGE</title>
 
 <!--Remy Sharp Shim --> 
 <!--[if lte IE 9]> 
@@ -19,17 +19,6 @@ $(document).ready(function(){
         $(".cover").slideDown();
     });
 
-/*This gets the IP info*/
-	$.get("https://ipinfo.io/json", function (response) {
-		$("#ip").html("IP: " + response.ip);
-		$("#address").html("Location: " + response.city + ", " + response.region);
-		$("#details").html(JSON.stringify(response, null, 4));
-	}, "jsonp");
-
-/*styles IP address card*/
-	$("#flip").click(function(){
-		$("#panel").slideToggle();
-	}); 
 
 
 /*This hides the cover page once a link is selected*/
@@ -41,12 +30,6 @@ $(document).ready(function(){
 	
 //Basic script used from http://jsfiddle.net/XQ9kY/1/
 
-	var totalFirstResult = 0;
-	var totalSecondResult = 0;
-	var totalSideResult = 0;
-	var totalThirdResult = 0;
-	var totalFourthResult = 0;
-	var totalFifthResult = 0;
 
 	$('#first').hover(   
 		function(){       
@@ -54,9 +37,8 @@ $(document).ready(function(){
 		},    
 		function(){       
 			var outTime = new Date().getTime();       
-			var firstTime = (outTime - $(this).data('inTime'))/1000;
-			totalFirstResult = totalFirstResult + firstTime;
-			$('#firstResult').html('You hovered over the topmost part for ' + totalFirstResult.toFixed(2) + ' seconds. The last time you hovered here was: ' + totalFirstResult.toFixed(2) + ' seconds long.');
+			var firstTime = (outTime - $(this).data('inTime'))/1000;        
+			$('#firstResult').html('You hovered over the topmost part for ' + firstTime + ' seconds.');
 		}
 	);
 	$('#second').hover(   
@@ -65,9 +47,8 @@ $(document).ready(function(){
 		},    
 		function(){       
 			var outTime = new Date().getTime();       
-			var secondTime = (outTime - $(this).data('inTime'))/1000;
-			totalSecondResult = totalSecondResult + secondTime;
-			$('#secondResult').html('You gazed upon the top box for ' + totalSecondResult.toFixed(2) + ' seconds. The last time you hovered here was ' + secondTime.toFixed(2) + ' seconds long.');
+			var secondTime = (outTime - $(this).data('inTime'))/1000;        
+			$('#secondResult').html('You gazed upon the top box for ' + secondTime + ' seconds.');
 		}
 	);
 	$('#side').hover(   
@@ -77,8 +58,7 @@ $(document).ready(function(){
 		function(){       
 			var outTime = new Date().getTime();       
 			var sideTime = (outTime - $(this).data('inTime'))/1000;        
-			totalSideResult = totalSideResult + sideTime;
-			$('#sideResult').html('You stared at the side for ' + totalSideResult.toFixed(2) + ' seconds. The last time you hovered here was ' + sideTime.toFixed(2) + ' seconds.');
+			$('#sideResult').html('You stared at the side for ' + sideTime + ' seconds.');
 		}
 	);
 	$('#third').hover(   
@@ -87,9 +67,8 @@ $(document).ready(function(){
 		},    
 		function(){       
 			var outTime = new Date().getTime();       
-			var thirdTime = (outTime - $(this).data('inTime'))/1000;
-			totalThirdResult = totalThirdResult + thirdTime;			
-			$('#thirdResult').html('You read the slideshow for ' + totalThirdResult.toFixed(2) + ' seconds. The last time you hovered here was '+thirdTime.toFixed(2) + ' seconds.');
+			var thirdTime = (outTime - $(this).data('inTime'))/1000;        
+			$('#thirdResult').html('You read the slideshow for ' + thirdTime + ' seconds.');
 		}
 	);
 	$('#fourth').hover(   
@@ -98,9 +77,8 @@ $(document).ready(function(){
 		},    
 		function(){       
 			var outTime = new Date().getTime();       
-			var fourthTime = (outTime - $(this).data('inTime'))/1000;
-			totalFourthResult = totalFourthResult + fourthTime;			
-			$('#fourthResult').html('You were wondering about this cool part for ' + totalFourthResult.toFixed(2) + ' seconds. The last time you hovered here was ' + fourthTime.toFixed(2) + ' seconds.');
+			var fourthTime = (outTime - $(this).data('inTime'))/1000;        
+			$('#fourthResult').html('You were wondering about this cool part for ' + fourthTime + ' seconds.');
 		}
 	);
 //end hover
@@ -117,8 +95,8 @@ $(document).ready(function(){
     }, 0);
 });
 //end scroll top
-
 });
+
 </script>
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -170,7 +148,6 @@ $(document).ready(function(){
 </div>
 
 <div id="side">
-<div id="sideCont">
 <h1>Lorem Ipsum</h1>
 <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vel massa sollicitudin dolor mattis ultricies quis in justo. Nunc facilisis nibh in volutpat dignissim. Nunc convallis ligula at iaculis vulputate. Curabitur tempus dignissim diam semper dignissim. Praesent vel molestie dolor, eget porta lorem. Nulla posuere molestie ex nec semper. Maecenas aliquet interdum risus et sodales.
 
@@ -178,13 +155,9 @@ Proin porttitor vestibulum efficitur. Ut tristique, dolor at semper mollis, ipsu
 
 Nulla porttitor arcu id mauris fringilla porttitor. Nam vehicula, ligula quis pretium volutpat, erat elit tincidunt odio, iaculis molestie tortor purus a diam. Nunc fringilla orci et enim aliquet gravida. Cras vehicula libero eu tellus molestie dictum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Maecenas laoreet enim in ligula ultrices eleifend. Vivamus id purus lacus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; </p>
 </div>
-</div>
-
 
 <div id="second">
-
 <img id="ex" src="images/exampleimage.jpg" alt="example"/>
-
 </div>
 
 
@@ -418,7 +391,7 @@ function showSlides(n) {
 </div>
 
 <div id="fourth">
-<div id="trackerContainer">
+
 <p id="tracker">Thanks for visiting! I hope you don't mind, but we've kept track of the sections you've visited: </p>
 
 
@@ -428,19 +401,13 @@ function showSlides(n) {
 		<div id="sideResult"></div>
 		<div id="thirdResult"></div>
 		<div id="fourthResult"></div>
-	</div></div>
-
-	<div id="userInfo">
-		<h1 id="flip">YOUR IP ADDRESS CARD:</h1>
-		<div id="panel">
-			<div id="ip"></div>
-			<div id="address"></div>
-			<div id="details"></div>
-		</div>						
 	</div>
 </div>
 
-<footer></footer>
+<footer>
+  <p><small>&copy; 2017 by <a href="#" target="_blank" class="a4gp2">A4GP2</a>, All Rights Reserved ~ <a href="" target="_blank"><img class="valid" src="http://edison.seattlecentral.edu/~Hanbo.Yoon/itc134_images/html5.png" style="width:50px;height:50px" alt="html5 badge logo"></a>  
+<a href="" target="_blank"><img class="valid" src="http://edison.seattlecentral.edu/~Hanbo.Yoon/itc134_images/css.png" style="width:50px;height:50px" alt="css badge logo" ></a></small></p>
+</footer>
 
 </div>
 </body>
