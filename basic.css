@@ -323,7 +323,6 @@ h1.bullet {
 @media only screen and (max-width: 600px) {
   .prev, .next,.bullet {font-size: 11px}
   
-  #first {background:#666}
   
   #first,#second,#third,#fourth,#side,footer {
 	float:none;
@@ -337,5 +336,4 @@ h1.bullet {
 		width:100%;
 	}
 	.cover {visibility:hidden}
-	  #first {background:#666}
 }
