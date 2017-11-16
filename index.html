@@ -11,6 +11,7 @@
 <![endif]-->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script type="text/javascript">
+/*makes the cover slide down up*/
 $(document).ready(function(){
     $(".btn1").click(function(){
         $(".cover").slideUp();
@@ -19,6 +20,7 @@ $(document).ready(function(){
         $(".cover").slideDown();
     });
 	
+/*full screen slideshow*/
 	$(".fullscreen-button").click(function(){
         $(".slideshow-container").toggleClass('fullscreen');
     });
@@ -164,8 +166,8 @@ $(document).ready(function(){
 <p>Side Section</p>
 </div></a>-->
 
-
-<div class="btn1"></div>
+<img src="images/cover.jpg" alt="cover image" id="cover-image" />
+<div class="shadow"><div class="btn1"></div></div>
 </div>
 
 
@@ -202,33 +204,29 @@ Nulla porttitor arcu id mauris fringilla porttitor. Nam vehicula, ligula quis pr
 
 <div class="mySlides fade">
   <div class="numbertext">1 / 15</div>
-  <h1 class="bullet">This is the header</h1>
-  <ul class="bullet">
-		<li>This is a list</li>
-		<li>You can add info here</li>
-		<li>and here...</li>
-		<li>and here...</li>
-  </ul>
+  <h1 class="bullet">INTRO</h1>
+  <p class="bullet">
+		Algorithms are tracking us, and increasingly being used to make decisions that have serious repercussions on the lives of people.
+They are great at some things, but have serious limitations and blind spots. 
+Here are mistakes they commonly make.
+We don’t have the right social and legal infrastructure to deal with the downsides yet
+  </p>
 </div>
 
 <div class="mySlides fade">
   <div class="numbertext">2 / 15</div>
-  <h1 class="bullet">This is the header</h1>
-  <ul class="bullet">
-		<li>This is a list</li>
-		<li>You can add info here</li>
-		<li>and here...</li>
-		<li> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sed interdum mauris. Aliquam interdum sodales posuere. Donec ut nunc ante. Suspendisse sit amet urna fermentum, bibendum sapien in, eleifend diam. Etiam tempor gravida felis, sit amet iaculis arcu vulputate quis. Ut pulvinar, nibh eget lacinia imperdiet, augue magna congue metus, a placerat metus mi in risus. Aenean gravida, lectus et pulvinar convallis, tortor lectus maximus purus, in scelerisque nunc ex vitae nulla. Nullam eget dolor a velit tincidunt vestibulum consectetur aliquet tortor. Cras bibendum ligula at leo facilisis, ut tincidunt orci venenatis. Sed tempus magna neque, id tincidunt odio porta et. Suspendisse sodales, elit quis tempor vestibulum, libero erat scelerisque turpis, vel efficitur dolor erat vitae erat.
+  <h1 class="bullet">HOW IT AFFECTS US LEGALLY</h1>
+  <p class="bullet">
+		Algorithms are already being used to help judges decide on sentences.</br></br>
+They are also deciding where policing is most aggressive. Unlike their human predecessors, they aren’t just looking at crime data, they are looking at location data (among other things) from people who aren’t even directly involved. Facebook has also been algorithmically monitoring its users to catch online predators. While the goal is laudable and it seems to have prevented at least a few crimes, it’s concerning when a social media company who manipulates its users’ interactions as part of its business model also starts selectively reporting some of their actions to law enforcement, based on what it deems “shifty”.</br></br>
+Algorithms are increasingly being used in the legal field, having taken over huge chunks of discovery and research. Most of the litigation and negotiation is still being carried out by humans, but they are working off of the evidence found by algorithms.
 
-Etiam quis efficitur felis, vel pellentesque erat. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Phasellus volutpat diam faucibus rhoncus tincidunt. Nullam ac erat euismod, tincidunt tellus et, tristique arcu. Maecenas blandit mauris a arcu pharetra, id volutpat orci cursus. Duis non commodo eros. Sed mattis id erat sit amet ultricies.
-
-Nulla rhoncus erat sapien, vel porta purus hendrerit in. Suspendisse porta aliquet dictum. Etiam ullamcorper rutrum elit non dapibus. Donec ex urna, vestibulum vel erat sed, rutrum lacinia orci. Vestibulum in mauris at enim pulvinar pretium. Ut finibus justo lacus, a placerat tortor bibendum in. Vivamus vitae risus accumsan, commodo ligula id, faucibus lorem. Aenean congue ut lectus sed semper. Vestibulum sodales ultricies consectetur. Integer ultrices malesuada vehicula. </li>
-  </ul>
+  </p>
 </div>
 
 <div class="mySlides fade">
   <div class="numbertext">3 / 15</div>
-  <h1 class="bullet">This is the header</h1>
+  <h1 class="bullet">HOW IT AFFECTS US PROFFESIONALLY</h1>
   <ul class="bullet">
 		<li>This is a list</li>
 		<li>You can add info here</li>
@@ -239,87 +237,90 @@ Nulla rhoncus erat sapien, vel porta purus hendrerit in. Suspendisse porta aliqu
 
 <div class="mySlides fade">
   <div class="numbertext">4 / 15</div>
-  <h1 class="bullet">This is the header</h1>
+  <h1 class="bullet">WHAT'S AFFECTED FINANCIALLY</h1>
   <ul class="bullet">
-		<li>This is a list</li>
-		<li>You can add info here</li>
-		<li>and here...</li>
-		<li>and here...</li>
+		<li>Works as a mass surveillance tool and uses the big data analysis technology.</li>
+		<li>Credit cards, personal loans, car loans, mortgages & insurance plans</li>
+		<li>Online items, restaurants, taxis, school fees, movies & transfers </li>
+		<li>Store purchases can be used to impact someone’s credit history</li>
+		<li>...</li>
   </ul>
 </div>
 
 <div class="mySlides fade">
   <div class="numbertext">5 / 15</div>
-  <h1 class="bullet">This is the header</h1>
+  <h1 class="bullet">SOCIALLY AFFECTED</h1>
   <ul class="bullet">
-		<li>This is a list</li>
-		<li>You can add info here</li>
-		<li>and here...</li>
-		<li>and here...</li>
+		<li>Facebook is causing polarizing views based on demographic information</li>
+		<li>Many Chinese people are dismayed by recent advances in social credit</li>
+		<li>Some Chinese people are excited about advances as part of a popularity contest</li>
+		<li>Your score is partially affected by your online friends</li>
+		<li>You may want to think twice about who you friend on Facebook</li>
+		<li>Twitter comments could influence your reputation of violating societal norms</li>
+		<li>Dating sites could post your score to tell how reliable you are</li>
+
   </ul>
 </div>
 
 <div class="mySlides fade">
   <div class="numbertext">6 / 15</div>
-  <h1 class="bullet">This is the header</h1>
-  <ul class="bullet">
-		<li>This is a list</li>
-		<li>You can add info here</li>
-		<li>and here...</li>
-		<li>and here...</li>
-  </ul>
+  <h1 class="bullet">BIAS</h1>
+  <p class="bullet">
+		There have been instances of sentencing algorithms recreating racist biases because of how they were trained, even when the algorithm does not directly look at race and only works with data that correlates to race.</br></br>
+<u style="color:green">Google ads are also more likely to show ads for high-paying executive jobs to men.</u>
+
+  </p>
 </div>
 
 
 <div class="mySlides fade">
   <div class="numbertext">7 / 15</div>
-  <h1 class="bullet">This is the header</h1>
-  <ul class="bullet">
-		<li>This is a list</li>
-		<li>You can add info here</li>
-		<li>and here...</li>
-		<li>and here...</li>
-  </ul>
+  <h1 class="bullet">RECOGNITION ERROR</h1>
+  <p class="bullet">
+		Adversarial images have been used to fool machine learning algorithms. Changing a single pixel on an image of a turtle led Google to think it was a gun. This is worrisome for the obvious reason that these algorithms can easily be tricked but also that if a single pixel can so easily foil the algorithm, as simple bit flip on the image file or a stuck pixel on the camera sensor might, on a large enough sample, produce the same results.</br></br>
+Google image recognition has also confused humans with gorillas, which ties back to the racism issue but also presents a pretty galling recognition error of its own.
+
+
+  </p>
 </div>
 
 
 <div class="mySlides fade">
   <div class="numbertext">8 / 15</div>
-  <h1 class="bullet">This is the header</h1>
-  <ul class="bullet">
-		<li>This is a list</li>
-		<li>You can add info here</li>
-		<li>and here...</li>
-		<li>and here...</li>
-  </ul>
+  <h1 class="bullet">NOT UNDERSTANDING THE DATA YOU ARE LOOKING AT</h1>
+  <p class="bullet">
+		Once people either start over relying on algorithms or the algorithms become too hard to understand for laypeople, employers, schools, police departments, judges, and financial institutions may stop questioning the results or not even be able to.</br></br>
+In a recent controversy over the censoring of a famous picture from the Vietnam War, Facebook blamed their software for the removal, which was only reversed after an international outcry. There is nothing to suggest that the reversal would have occurred if the person being censored wasn’t a famous journalist and the picture hadn’t won a Pulitzer Prize.</br></br>
+It’s easy to forget that while algorithms replicate portions of human thought, they are not, at this point, conscious what they are doing or even remotely human in how they process information. They have no empathy, no self-awareness, no understanding of the purpose behind what they are doing, and no instincts that would allow them to deviate from whatever they have been optimized to do. They don’t question what they do, can’t be reasoned with, and can not be asked to justify their decisions in the way a human can. A human can intuitively understand that a picture showing a copy of Mein Kampf in a Holocaust Museum means something very different than a picture from the 1930s of the same book sitting on the shelf of a right-wing German political commentator. As they currently exist, algorithms will simply use optical character recognition to tag the book and possibly censor the picture if it isn’t in the best interest of a company to have controversial pictures posted on their website.
+
+  </p>
 </div>
 
 
 <div class="mySlides fade">
   <div class="numbertext">9 / 15</div>
-  <h1 class="bullet">This is the header</h1>
-  <ul class="bullet">
-		<li>This is a list</li>
-		<li>You can add info here</li>
-		<li>and here...</li>
-		<li>and here...</li>
-  </ul>
+  <h1 class="bullet">STOLEN OR SHARED IDENTITY</h1>
+  <p class="bullet">
+		Online add/social trackers and shared computers
+“Coffee shop” stealing of accounts and passwords
+What a stolen identity could do to your credit score now will affect all facets of life
+Government can post your scores online for others to look at- </br></br>
+
+<a href="https://newrepublic.com/article/123285/chinas-troubling-new-social-credit-system-and-ours">https://newrepublic.com/article/123285/chinas-troubling-new-social-credit-system-and-ours</a>
+  </p>
 </div>
 
 <div class="mySlides fade">
   <div class="numbertext">10 / 15</div>
-  <h1 class="bullet">This is the header</h1>
+  <h1 class="bullet">OPTING OUT</h1>
   <ul class="bullet">
-		<li>This is a list</li>
-		<li>You can add info here</li>
-		<li>and here...</li>
-		<li>and here...</li>
+		As if these issues weren’t sufficiently worrisome in the current context, where people have some measure of control over what they subject themselves to, there are already signs that not submitting yourself to these, risk itself being frowned upon. There is an increasingly popular line of reasoning that there is in fact something wrong with people who don’t fully endorse and buy into this system. Some employers not only insist on seeing the Facebook profiles of prospective employees but refuse to evaluate candidates who don’t have one. Some have even suggested that not having a Facebook account is a sign of something sinister. Even when those who shun mainstream are presented in a favourable light, it’s still seen as an act of defiance of something unusual.
   </ul>
 </div>
 
 <div class="mySlides fade">
   <div class="numbertext">11 / 15</div>
-  <h1 class="bullet">This is the header</h1>
+  <h1 class="bullet">SCARY SCENARIOS</h1>
   <ul class="bullet">
 		<li>This is a list</li>
 		<li>You can add info here</li>
@@ -330,7 +331,7 @@ Nulla rhoncus erat sapien, vel porta purus hendrerit in. Suspendisse porta aliqu
 
 <div class="mySlides fade">
   <div class="numbertext">12 / 15</div>
-  <h1 class="bullet">This is the header</h1>
+  <h1 class="bullet">CONCLUSION</h1>
   <ul class="bullet">
 		<li>This is a list</li>
 		<li>You can add info here</li>
@@ -341,7 +342,7 @@ Nulla rhoncus erat sapien, vel porta purus hendrerit in. Suspendisse porta aliqu
 
 <div class="mySlides fade">
   <div class="numbertext">13 / 15</div>
-  <h1 class="bullet">This is the header</h1>
+  <h1 class="bullet">ADDITIONAL LINKS</h1>
   <ul class="bullet">
 		<li>This is a list</li>
 		<li>You can add info here</li>

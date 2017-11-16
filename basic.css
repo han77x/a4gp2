@@ -107,14 +107,13 @@ footer {
 
 /*this is the cover div that will appear when the page first loads*/
 .cover {
-	width:100%;
+	width:100vw;
 	height:100vh;
-	background:url(images/cover.jpg);
 	background-repeat:no-repeat;
-	background-position:center;
-	background-color:#000;
+	background-position:absolute;
+	background-color:#727272;
 	position:fixed;
-	z-index:2;
+	z-index:3;
 	line-height:80px;
 	font-size:24px;
 	font-family: 'Lucida Console', 'Lucida Sans Typewriter', monaco, 'Bitstream Vera Sans Mono', monospace;
@@ -125,6 +124,16 @@ footer {
 a.cover {
 	text-decoration:none;
 	color:#fff;
+}
+
+.shadow {
+	position:absolute;
+	box-shadow: inset 0 -40px 0 #000;
+	width:100%;
+	height:100%;
+	left:0;
+	top:0;
+	z-index:2;
 }
 
 /* #title {
@@ -200,6 +209,14 @@ a.cover {
 	color:#fff;
 } (I don't think these are in use so I just commented it out)*/
 
+#cover-image {
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+}
+
+
 /*these are the buttons for the cover div to move up and down*/
 
 .btn1{
@@ -214,7 +231,12 @@ a.cover {
   display:inline-block;
   bottom:35px;
   position:absolute;
-  left:50%
+  left:50%;
+  z-index:1;
+}
+
+.btn1:hover{
+	cursor:pointer;
 }
 
 .btn2{
@@ -375,7 +397,7 @@ h1.bullet {
 	.container {
 		width:100%;
 	}
-	.cover {visibility:hidden}
+	/*.cover {visibility:hidden}*/
 	
 	.slideshow-container {
 		max-width:100%;
