@@ -2,6 +2,7 @@
 	margin:0;
 	padding:0;
 }
+
 body {
 	width:100%;
 	background: linear-gradient(to top, #ffffff 12%, #000000 92%);
@@ -9,13 +10,14 @@ body {
 }
 
 #side {
-	height:1200px;
+	height:100%;
 	width:29.5%;
 	background:#ddd;
 	float:right;
 	border: 2px solid #006;
 	line-height:130%;
 }
+
 #sideCont {
 	padding:4%;
 }
@@ -24,52 +26,71 @@ body {
 	width:85%;
 	margin: 0 auto;
 }
+
 #first {
 	width: 100%;
 	height: 200px;
 	border: 2px solid #006;
-	background: url(images/nban.jpg);
+	background-image: url('images/nban.jpg');
 	background-size: 100% 100%;
-
 }
-#second, #fourth {
+
+#second{
 	width: 70%;
 	height:400px;
 	background:#fff;
 	border-bottom: 2px solid #000;
+	background-image: url('images/exampleimage.jpg');
+	background-repeat:no-repeat;
+	background-size:100% 100%;
 }
 
-#fourth {
-	font-size: 18px;
-	line-height: 150%;
-	height:auto;
-}
 #third {
 	width: 70%;
 	background: #ddd;
-
 }
+
+#fourth {
+	width: 70%;
+	font-size: 1.125em;
+	line-height: 150%;
+	/*height:400px;*/
+	height:auto;
+	background:#fff;
+	border-bottom: 2px solid #000;
+}
+
 footer {
 	width: 70%;
-	height: 50px;
+	height: auto;
 	background: #ddd;
 	font-size: 1em;
+	text-align: center;
 	clear:both;
 }
+
+#footertxt {
+	display:inline-block;
+	vertical-align: middle;	
+}
+
 /*styles the IP section*/
 #userInfo {
 	padding:2%;
 	background:yellow;
 	margin-top:10px;
 }
+
 #userInfo > h1 {
 	font-size: 22px;
 	line-height:150%;
 	border-bottom: 1px solid #000;
 }
+
 #flip {
 	cursor:pointer;
 }
+
 #panel {
 	display:none;
 }
@@ -79,12 +100,14 @@ footer {
 }
 
 /*sizes example image*/
-#ex {
-	width:100%;
+/* #ex {
+	width:99%;
 	overflow:hidden;
-	z-index:900;
-	height:100%;
-}
+	position:center;
+	background-repeat:no-repeat;
+	background-size:cover;
+	height:100%; 
+}  (no need for #ex, instead added image as background to #second) */
 
 /*hides results for seconds counter*/
 #results{
@@ -108,11 +131,13 @@ footer {
 	background-clip: content-box; 
 	box-shadow: inset 0 -40px 0 #000;
 }
+
 a.cover {
 	text-decoration:none;
 	color:#fff;
 }
-#title {
+
+/* #title {
 	color:#fff;
 	font-family: 'Lucida Console', 'Lucida Sans Typewriter', monaco, 'Bitstream Vera Sans Mono', monospace;
 	font-size:65px;
@@ -121,7 +146,7 @@ a.cover {
 	z-index:1;
 	position:absolute;
 	top:100px;
-	right:100px;
+	right:100px; 
 	
 }
 .coverFirst {
@@ -183,8 +208,10 @@ a.cover {
 	top:550px;
 	z-index:1;
 	color:#fff;
-}
+} (I don't think these are in use so I just commented it out)*/
+
 /*these are the buttons for the cover div to move up and down*/
+
 .btn1{
     border:0;
     margin:0 auto;
@@ -199,6 +226,7 @@ a.cover {
   position:absolute;
   left:50%
 }
+
 .btn2{
 	width: 0; 
 	height: 0; 
@@ -215,7 +243,8 @@ a.cover {
 
 
 
-/*This is for the slides*/
+/*--------This is for the slides---------*/
+
 /* Slideshow container */
 .slideshow-container {
   max-width: 80%;
@@ -323,7 +352,6 @@ h1.bullet {
 @media only screen and (max-width: 600px) {
   .prev, .next,.bullet {font-size: 11px}
   
-  #first {background:#666}
   
   #first,#second,#third,#fourth,#side,footer {
 	float:none;
@@ -337,5 +365,5 @@ h1.bullet {
 		width:100%;
 	}
 	.cover {visibility:hidden}
-	  #first {background:#666}
+	  
 }
