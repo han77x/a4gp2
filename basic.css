@@ -263,7 +263,7 @@ a.cover {
   height:400px;
   margin: auto;
   position: relative;
-  background: linear-gradient(to bottom right, #ffffff -8%, #000000 106%);
+  background: linear-gradient(to bottom right, #ffffff 0%, #737373 106%);
   top:20px;
   border:1px solid #000;
   overflow-x: hidden;
