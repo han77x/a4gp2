@@ -99,17 +99,7 @@ footer {
 	padding:2%;
 }
 
-/*sizes example image*/
-/* #ex {
-	width:99%;
-	overflow:hidden;
-	position:center;
-	background-repeat:no-repeat;
-	background-size:cover;
-	height:100%; 
-}  (no need for #ex, instead added image as background to #second) */
 
-/*hides results for seconds counter*/
 #results{
 	display: none;
 }
@@ -254,7 +244,27 @@ a.cover {
   background: linear-gradient(to bottom right, #ffffff -8%, #000000 106%);
   top:20px;
   border:1px solid #000;
-  overflow: auto;
+  overflow-x: hidden;
+  overflow-y:scroll;
+
+}
+
+.slideshow-container.fullscreen {
+	z-index:9999;
+	width:100vw;
+	height:100vh;
+	position:fixed;
+	top:0;
+}
+
+.fullscreen-button {
+	text-align:center;
+	cursor:ponter;
+}
+
+.fullscreen-button:hover {
+	cursor:pointer;
+	text-decoration:underline;
 }
 
 
@@ -288,9 +298,9 @@ a.cover {
 .bullet {  
 	color: #000;
 	font-size: 18px;
-	padding: 8px 30px 8px 30px;
+	padding: 8px 30px 8px 50px;
 	position: relative;
-	width: 100%;
+	width: 85%;
 	text-align: left;
 	line-height:150%;
 	list-style-position: inside;
@@ -356,6 +366,7 @@ h1.bullet {
   #first,#second,#third,#fourth,#side,footer {
 	float:none;
 	width:100%;
+	border:none;
   }
   .container {width:100%}
 }
@@ -365,5 +376,8 @@ h1.bullet {
 		width:100%;
 	}
 	.cover {visibility:hidden}
-	  
+	
+	.slideshow-container {
+		max-width:100%;
+	}
 }

@@ -18,6 +18,11 @@ $(document).ready(function(){
     $(".btn2").click(function(){
         $(".cover").slideDown();
     });
+	
+	$(".fullscreen-button").click(function(){
+        $(".slideshow-container").toggleClass('fullscreen');
+    });
+	
 
 /*This gets the IP info*/
 	$.get("https://ipinfo.io/json", function (response) {
@@ -128,6 +133,7 @@ $(document).ready(function(){
 
 <body>
 
+
 <div class="cover">
 <!--<div id ="title">
 <p>JUDGED BY ALGORITHMS</p>
@@ -192,9 +198,10 @@ Nulla porttitor arcu id mauris fringilla porttitor. Nam vehicula, ligula quis pr
 <div id="third">
 
 <div class="slideshow-container">
+<p class="fullscreen-button">Full Screen</p>
 
 <div class="mySlides fade">
-  <div class="numbertext">1 / 3</div>
+  <div class="numbertext">1 / 15</div>
   <h1 class="bullet">This is the header</h1>
   <ul class="bullet">
 		<li>This is a list</li>
@@ -205,7 +212,7 @@ Nulla porttitor arcu id mauris fringilla porttitor. Nam vehicula, ligula quis pr
 </div>
 
 <div class="mySlides fade">
-  <div class="numbertext">2 / 3</div>
+  <div class="numbertext">2 / 15</div>
   <h1 class="bullet">This is the header</h1>
   <ul class="bullet">
 		<li>This is a list</li>
@@ -220,7 +227,7 @@ Nulla rhoncus erat sapien, vel porta purus hendrerit in. Suspendisse porta aliqu
 </div>
 
 <div class="mySlides fade">
-  <div class="numbertext">3 / 3</div>
+  <div class="numbertext">3 / 15</div>
   <h1 class="bullet">This is the header</h1>
   <ul class="bullet">
 		<li>This is a list</li>
@@ -231,7 +238,7 @@ Nulla rhoncus erat sapien, vel porta purus hendrerit in. Suspendisse porta aliqu
 </div>
 
 <div class="mySlides fade">
-  <div class="numbertext">4 / 3</div>
+  <div class="numbertext">4 / 15</div>
   <h1 class="bullet">This is the header</h1>
   <ul class="bullet">
 		<li>This is a list</li>
@@ -242,7 +249,7 @@ Nulla rhoncus erat sapien, vel porta purus hendrerit in. Suspendisse porta aliqu
 </div>
 
 <div class="mySlides fade">
-  <div class="numbertext">5 / 3</div>
+  <div class="numbertext">5 / 15</div>
   <h1 class="bullet">This is the header</h1>
   <ul class="bullet">
 		<li>This is a list</li>
@@ -253,19 +260,7 @@ Nulla rhoncus erat sapien, vel porta purus hendrerit in. Suspendisse porta aliqu
 </div>
 
 <div class="mySlides fade">
-  <div class="numbertext">6 / 3</div>
-  <h1 class="bullet">This is the header</h1>
-  <ul class="bullet">
-		<li>This is a list</li>
-		<li>You can add info here</li>
-		<li>and here...</li>
-		<li>and here...</li>
-  </ul>
-</div>
-
-
-<div class="mySlides fade">
-  <div class="numbertext">7 / 3</div>
+  <div class="numbertext">6 / 15</div>
   <h1 class="bullet">This is the header</h1>
   <ul class="bullet">
 		<li>This is a list</li>
@@ -277,7 +272,7 @@ Nulla rhoncus erat sapien, vel porta purus hendrerit in. Suspendisse porta aliqu
 
 
 <div class="mySlides fade">
-  <div class="numbertext">8 / 3</div>
+  <div class="numbertext">7 / 15</div>
   <h1 class="bullet">This is the header</h1>
   <ul class="bullet">
 		<li>This is a list</li>
@@ -289,7 +284,19 @@ Nulla rhoncus erat sapien, vel porta purus hendrerit in. Suspendisse porta aliqu
 
 
 <div class="mySlides fade">
-  <div class="numbertext">9 / 3</div>
+  <div class="numbertext">8 / 15</div>
+  <h1 class="bullet">This is the header</h1>
+  <ul class="bullet">
+		<li>This is a list</li>
+		<li>You can add info here</li>
+		<li>and here...</li>
+		<li>and here...</li>
+  </ul>
+</div>
+
+
+<div class="mySlides fade">
+  <div class="numbertext">9 / 15</div>
   <h1 class="bullet">This is the header</h1>
   <ul class="bullet">
 		<li>This is a list</li>
@@ -300,7 +307,7 @@ Nulla rhoncus erat sapien, vel porta purus hendrerit in. Suspendisse porta aliqu
 </div>
 
 <div class="mySlides fade">
-  <div class="numbertext">10 / 3</div>
+  <div class="numbertext">10 / 15</div>
   <h1 class="bullet">This is the header</h1>
   <ul class="bullet">
 		<li>This is a list</li>
@@ -311,7 +318,7 @@ Nulla rhoncus erat sapien, vel porta purus hendrerit in. Suspendisse porta aliqu
 </div>
 
 <div class="mySlides fade">
-  <div class="numbertext">11 / 3</div>
+  <div class="numbertext">11 / 15</div>
   <h1 class="bullet">This is the header</h1>
   <ul class="bullet">
 		<li>This is a list</li>
@@ -322,7 +329,7 @@ Nulla rhoncus erat sapien, vel porta purus hendrerit in. Suspendisse porta aliqu
 </div>
 
 <div class="mySlides fade">
-  <div class="numbertext">12 / 3</div>
+  <div class="numbertext">12 / 15</div>
   <h1 class="bullet">This is the header</h1>
   <ul class="bullet">
 		<li>This is a list</li>
@@ -333,7 +340,7 @@ Nulla rhoncus erat sapien, vel porta purus hendrerit in. Suspendisse porta aliqu
 </div>
 
 <div class="mySlides fade">
-  <div class="numbertext">13 / 3</div>
+  <div class="numbertext">13 / 15</div>
   <h1 class="bullet">This is the header</h1>
   <ul class="bullet">
 		<li>This is a list</li>
@@ -343,7 +350,7 @@ Nulla rhoncus erat sapien, vel porta purus hendrerit in. Suspendisse porta aliqu
   </ul>
 </div>
 <div class="mySlides fade">
-  <div class="numbertext">14 / 3</div>
+  <div class="numbertext">14 / 15</div>
   <h1 class="bullet">This is the header</h1>
   <ul class="bullet">
 		<li>This is a list</li>
@@ -354,7 +361,7 @@ Nulla rhoncus erat sapien, vel porta purus hendrerit in. Suspendisse porta aliqu
 </div>
 
 <div class="mySlides fade">
-  <div class="numbertext">15 / 3</div>
+  <div class="numbertext">15 / 15</div>
   <h1 class="bullet">This is the header</h1>
   <ul class="bullet">
 		<li>This is a list</li>
@@ -426,8 +433,8 @@ function showSlides(n) {
 <p id="tracker">Thanks for visiting! I hope you don't mind, but we've kept track of the sections you've visited: </p>
 
 
-	<p>If you would like to see <input type="button" name="Submit" value="Click Here" onclick="document.getElementById('results').style.display = 'block' ;" />
-	<div id="results"></p>
+	<p>If you would like to see <input type="button" name="Submit" value="Click Here" onclick="document.getElementById('results').style.display = 'block' ;" /></p>
+	<div id="results">
 		<div id="firstResult"></div>
 		<div id="sideResult"></div>
 		<div id="thirdResult"></div>
@@ -445,8 +452,8 @@ function showSlides(n) {
 </div>
 
 <footer>
-  <p><small><div id="footertxt">&copy; 2017 by <a href="#" target="_blank" class="a4gp2">A4GP2</a>, All Rights Reserved ~ </div> <a href="" target="_blank"><img class="valid" src="http://edison.seattlecentral.edu/~Hanbo.Yoon/itc134_images/html5.png" style="width:45px;height:45px" alt="html5 badge logo"></a>  
-<a href="" target="_blank"><img class="valid" src="http://edison.seattlecentral.edu/~Hanbo.Yoon/itc134_images/css.png" style="width:45px;height:45px" alt="css badge logo" ></a></small></p>
+  <div id="footertxt"><small>&copy; 2017 by <a href="#" target="_blank" class="a4gp2">A4GP2</a>, All Rights Reserved ~ </small></div> <a href="" target="_blank"><img class="valid" src="http://edison.seattlecentral.edu/~Hanbo.Yoon/itc134_images/html5.png" style="width:45px;height:45px" alt="html5 badge logo"></a>  
+<a href="" target="_blank"><img class="valid" src="http://edison.seattlecentral.edu/~Hanbo.Yoon/itc134_images/css.png" style="width:45px;height:45px" alt="css badge logo" ></a>
 </footer>
 
 </div>
