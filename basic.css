@@ -65,6 +65,7 @@ iframe {
 	height:auto;
 	background:#fff;
 	border-bottom: 2px solid #000;
+	list-style-position:inside;
 }
 
 footer {

@@ -63,7 +63,7 @@ $(document).ready(function(){
 			var outTime = new Date().getTime();       
 			var firstTime = (outTime - $(this).data('inTime'))/1000;
 			totalFirstResult = totalFirstResult + firstTime;
-			$('#firstResult').html('You hovered over the topmost part for ' + totalFirstResult.toFixed(2) + ' seconds. The last time you hovered here was: ' + totalFirstResult.toFixed(2) + ' seconds long.');
+			$('#firstResult').html('You hovered over the banner for ' + totalFirstResult.toFixed(2) + ' seconds. The last time you hovered here was: ' + totalFirstResult.toFixed(2) + ' seconds long.');
 		}
 	);
 	$('#second').hover(   
@@ -74,7 +74,7 @@ $(document).ready(function(){
 			var outTime = new Date().getTime();       
 			var secondTime = (outTime - $(this).data('inTime'))/1000;
 			totalSecondResult = totalSecondResult + secondTime;
-			$('#secondResult').html('You gazed upon the top box for ' + totalSecondResult.toFixed(2) + ' seconds. The last time you hovered here was ' + secondTime.toFixed(2) + ' seconds long.');
+			$('#secondResult').html('You gazed upon the diagram for ' + totalSecondResult.toFixed(2) + ' seconds. The last time you hovered here was ' + secondTime.toFixed(2) + ' seconds long.');
 		}
 	);
 	$('#side').hover(   
@@ -85,7 +85,7 @@ $(document).ready(function(){
 			var outTime = new Date().getTime();       
 			var sideTime = (outTime - $(this).data('inTime'))/1000;        
 			totalSideResult = totalSideResult + sideTime;
-			$('#sideResult').html('You stared at the side for ' + totalSideResult.toFixed(2) + ' seconds. The last time you hovered here was ' + sideTime.toFixed(2) + ' seconds.');
+			$('#sideResult').html('You visited the video section for ' + totalSideResult.toFixed(2) + ' seconds. The last time you hovered here was ' + sideTime.toFixed(2) + ' seconds.');
 		}
 	);
 	$('#third').hover(   
@@ -371,16 +371,17 @@ function showSlides(n) {
 
 <div id="fourth">
 <div id="trackerContainer">
-<p id="tracker">Thanks for visiting! I hope you don't mind, but we've kept track of the sections you've visited: </p>
+<p id="tracker">THANKS FOR VISITING!<BR> I hope you don't mind, but we've kept track of the sections you've visited: </p>
 
 
 	<p>If you would like to see <input type="button" name="Submit" value="Click Here" onclick="document.getElementById('results').style.display = 'block' ;" /></p>
-	<div id="results">
-		<div id="firstResult"></div>
-		<div id="sideResult"></div>
-		<div id="thirdResult"></div>
-		<div id="fourthResult"></div>
-	</div></div>
+	<hr>
+	<ul id="results">
+		<li id="firstResult">You have not visited the banner section.</li>
+		<li id="sideResult">You have not visited the video section.</li>
+		<li id="thirdResult">You have not read the slideshow.</li>
+		<li id="fourthResult"></li>
+	</ul></div>
 
 	<div id="userInfo">
 		<h1 id="flip">YOUR IP ADDRESS CARD:</h1>
